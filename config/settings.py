@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third party
+    'rest_framework',
+    'corsheaders',
+
     # installed apps
     'apps.companion',
     'apps.journal',
