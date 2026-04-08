@@ -53,7 +53,7 @@ class User(AbstractUser):
     )
 
     username = None # removes from model    
-    email = models.EmailField(unique=True) # o two users can share the same email
+    email = models.EmailField(unique=True) # no two users can share the same email
     name = models.CharField(max_length=50)
     USERNAME_FIELD = 'email' # tells django to use email as login field instead of username
     REQUIRED_FIELDS = [] # Fields are prompted when created superuser through CMD, password and email are already handled separately
